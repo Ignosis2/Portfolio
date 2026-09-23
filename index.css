@@ -1,0 +1,155 @@
+html{
+    background-color: lightblue;
+    overflow: hidden;
+}
+.overlay{
+    position:absolute;
+    z-index:9999;
+    inset: 0px;
+    height:100vh;
+    width: 100wv;
+    margin:0px;
+    padding:0px;
+    background-color: transparent;
+    animation: transparentoverlay 4s forwards;
+}
+.emoji{
+    position:absolute;
+    display:flex;
+    flex-wrap: wrap;
+    opacity: 0.2;
+    z-index:-1;
+}
+#emoji1{
+    transform:rotate(40deg) scale(3);
+}
+#emoji2{
+    transform:translateX(-150px) rotate(40deg) scale(3);
+}
+#emoji3{
+    transform:translateX(-300px) rotate(40deg) scale(3);
+}
+#emoji4{
+    transform:translateX(-450px) rotate(40deg) scale(3);
+}
+#emoji5{
+    transform:translateX(-600px) rotate(40deg) scale(3);
+}
+#emoji6{
+    transform:translateX(-750px) rotate(40deg) scale(3);
+}
+#emoji7{
+    transform:translateX(-900px) rotate(40deg) scale(3);
+}
+#emoji8{
+    transform:translateX(150px) rotate(40deg) scale(3);
+}
+#emoji9{
+    transform:translateX(300px) rotate(40deg) scale(3);
+}
+#emoji10{
+    transform:translateX(450px) rotate(40deg) scale(3);
+}
+#emoji11{
+    transform:translateX(600px) rotate(40deg) scale(3);
+}
+#emoji12{
+    transform:translateX(750px) rotate(40deg) scale(3);
+}
+#emoji13{
+    transform:translateX(900px) rotate(40deg) scale(3);
+}
+#emoji14{
+    transform:translateX(-1050px) rotate(40deg) scale(3);
+}
+#emoji15{
+    transform:translateX(1050px) rotate(40deg) scale(3);
+}
+#emoji16{
+    transform:translateX(1200px) rotate(40deg) scale(3);
+}
+#emoji17{
+    transform:translateX(-1200px) rotate(40deg) scale(3);
+}
+.land{
+    height:100vh;
+    display:flex;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+#big{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    margin:5px;
+    color: #252525;
+}
+#smol{
+    display: flex;
+    justify-content: center;
+    font-size:30px;
+    margin-top:5px;
+    margin-bottom:30px;
+    color: #252525;
+}
+h1 span:first-child{
+    padding:5px;
+    animation:frombottom 5s ease-out;
+}
+h1 span:last-child{
+    padding: 5px;
+    animation:fromleft 5s ease-out;
+}
+h3 span:first-child{
+    padding:3px;
+    animation:fromright 5s ease-out;
+}
+h3 span:last-child{
+    padding:3px;
+    animation:fromtop 5s ease-out;
+}
+#button{
+    margin-top:15px;
+    background-color: orange;
+    color: #252525;
+    padding:5px;
+    border-radius:8px;
+    animation: fadein 3s 1 5300ms backwards,disablepointer 4s 1 0s forwards;
+    transform: scale(2);
+    box-shadow:2px 2px 1px black;
+}
+#button:hover{
+    background-color: rgb(222, 145, 3);
+}
+@keyframes fadein{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes spin{
+    from{transform:rotate(5deg);}
+    to{transform:rotate(360deg);}
+}
+@keyframes fromtop{
+    from{transform: translateY(-1000%) rotate(0deg);}
+    to{transform:translateY(0) rotate(360deg);}
+}
+@keyframes frombottom{
+    from{transform: translateY(1000%) rotate(0deg);}
+    to{transform:translateY(0) rotate(360deg);}
+}
+@keyframes fromleft{
+    from{transform: translateX(-1000%) rotate(0deg);}
+    to{transform:translateX(0)  rotate(360deg);}
+}
+@keyframes fromright{
+    from{transform: translatex(1000%) rotate(0deg);}
+    to{transform:translateX(0) rotate(360deg);}
+}
+@keyframes transparentoverlay{
+    0%{visibility: visible;}
+    99%{visibility: visible;}
+    100%{visibility: hidden;}
+}

@@ -1,0 +1,63 @@
+.popndis>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    color:red;
+    font-size: 500%;
+}
+.popndis span:nth-child(1){
+    animation:swap 3s 1 0s ease-out both;
+}
+.popndis span:nth-child(2){
+    animation:swap 3s 1 3s ease-out both;
+}
+.popndis span:nth-child(3){
+    animation:swap 3s 1 6s ease-out both;
+}
+.popndis span:nth-child(4){
+    animation:swap 3s 1 9s ease-out both;
+}
+.popndis span:nth-child(5){
+    animation:swap 3s 1 12s ease-out both;
+}
+html{
+    background-color:black;
+    overflow: hidden;
+}
+#meme{
+    animation:pop 3s 1 15s ease-out both;
+    position:absolute;
+    width:500px;
+    height:500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#back{
+    position:absolute;
+    left:50%;
+    top: calc(50% + 270px);
+    transform: translateX(-60%) scale(2.0);
+    border-radius: 8px;
+    background-color: #1B2B34;
+    color: #E87525;
+    animation: pop 3s 1 17s ease-out both;
+    border:0px solid black;
+    margin:20px;
+}
+#back:hover{
+    color: #1B2B34;
+    background-color: #E87525;
+}
+@keyframes swap{
+    0%{opacity:0%;}
+    50%{opacity:100%;}
+    100%{opacity:0%;}
+}
+@keyframes pop{
+    from{opacity:0%;}
+    to{opacity:100%;}
+}
