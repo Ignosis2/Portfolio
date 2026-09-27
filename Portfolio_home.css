@@ -15,7 +15,7 @@ body{
     align-items:center;
     background-color:#1B2B34;
     margin:0px;
-    animation:slideinfromright 5s ease-out;
+    animation:popup 1s ease-out;
     color:#FBF3E7;
 }
 .navbar>a{
@@ -70,7 +70,7 @@ body{
     justify-content: center;
     color: #1B2B34;
     font-size: 120%;
-    animation: comefromtop 5s ease-out;
+    animation: popup 1s ease-out;
 }
 #end{
     padding:5px;
@@ -89,13 +89,13 @@ body{
     margin-top: 20px;
 }
 .intro{
-    animation: slidecardfromright 5s ease-out;
+    animation: popup 1s ease-out;
 }
 .skill{
-    animation: slidecardfrombottom 5s ease-out;
+    animation: popup 1s ease-out;
 }
 .project{
-    animation: slidecardfromleft 5s ease-out;
+    animation: popup 1s ease-out;
 }
 .intro:hover{
     flex:2;
@@ -192,7 +192,7 @@ body{
     to{transform: translateY(0);}
 }
 @keyframes popup{
-    from{transform: translateY(10%);}
-    to{transform: translateY(0);}
+    from{transform: translateY(10%);opacity: 0%;}
+    to{transform: translateY(0);opacity:100%;}
 }
 /* use 1s timing with ease out for popup animation should you choose to use it */
