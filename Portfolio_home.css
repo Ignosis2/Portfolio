@@ -154,7 +154,7 @@ body{
     z-index:9999;
     position: absolute;
     inset:0px;
-    animation: transparentoverlay 1s forwards;
+    animation: transparentoverlay 1s both;
 }
 @keyframes appear{
     from{opacity:0;}
