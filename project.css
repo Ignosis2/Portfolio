@@ -1,5 +1,5 @@
 html{
-    overflow-x:auto; 
+    overflow-x:hidden; 
 }
 body{
     margin:0px;
@@ -28,20 +28,28 @@ body>h1{
     padding:5px;
     width:100%;
     z-index:1;
-    color:aliceblue;
+    color:#FBF3E7;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 1;
+    position: relative;
 }
-text>h1{
-    display: inline-block;
+.text>h1{
+    align-self: center;
+}
+.text.h2{
+    align-self: flex-start;
 }
 .project>#nexus{
-    box-sizing: border-box;
-    width:100%;
-    height:100%;
-    opacity: 0.3;
+    width:1126px;
+    height:470px;
+    object-fit: fill;
     z-index:0;
     position: absolute;
+    filter:brightness(30%);
+    border:2px solid #1B2B34;
+    border-radius: 8px;
 }
 .navbar{
     height:50px;
