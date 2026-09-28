@@ -121,11 +121,15 @@ body{
     max-height: 540px;
     width: 100%;
     font-size:150%;
-    gap:5px;
 }
 .text>h3{
     margin:0px;
-    padding:5px;
+    padding:2px;
+}
+.text>img{
+    width:30px;
+    height:30px;
+    padding:3px;
 }
 .pro_desc{
     display: flex;
@@ -155,6 +159,9 @@ body{
     position: absolute;
     inset:0px;
     animation: transparentoverlay 1s both;
+}
+#flip{
+    filter:brightness(0) invert(1);
 }
 @keyframes appear{
     from{opacity:0;}
