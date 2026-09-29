@@ -13,6 +13,20 @@ body>h1{
     text-align: center;
     color: #1B2B34;
 }
+.link{
+    display:flex;
+    justify-content: end;
+}
+.link>a>img{
+    border:2px solid transparent;
+    border-radius: 30%;
+    width: 50px;
+    height:50px;
+    padding:5px;
+}
+.link>a>img:hover{
+    scale:1.2;
+}
 .project{
     box-sizing: border-box;
     height:500px;
@@ -27,6 +41,7 @@ body>h1{
 .text{
     padding:5px;
     width:100%;
+    height:100%;
     z-index:1;
     color:#FBF3E7;
     display: flex;
@@ -37,13 +52,15 @@ body>h1{
 }
 .text>h1{
     align-self: center;
+    text-align: center;
 }
-.text.h2{
-    align-self: flex-start;
+.text>h2{
+    align-self:center;
+    text-align: center;
 }
 .project>#nexus{
-    width:1126px;
-    height:470px;
+    width:calc(100% - 15px);
+    height:calc(100% - 15px);
     object-fit: fill;
     z-index:0;
     position: absolute;
