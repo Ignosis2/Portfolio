@@ -45,6 +45,7 @@ body>h1{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    animation: popup 1s ease-out;
 }
 .text{
     padding:5px;
