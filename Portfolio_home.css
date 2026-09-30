@@ -205,7 +205,7 @@ body{
     to{transform: translateY(0);opacity:100%;}
 }
 /* use 1s timing with ease out for popup animation should you choose to use it */
-@media (max-width:767px){
+@media (min-width:481px) and (max-width:767px){
     html{
         overflow-y:scroll;
         overflow-x: hidden;
@@ -220,5 +220,25 @@ body{
     }
     .isp{
         flex-direction: column;
+    }
+}
+@media (max-width:480px){
+    html{
+        overflow-y:scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+    .navbar>a{
+        width:95px;
+    }
+    .navbar>a:hover{
+        transform:scale(1.1);   
+    }
+    .isp{
+        flex-direction: column;
+    }
+    .decor{
+        gap:30px;
     }
 }

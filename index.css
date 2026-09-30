@@ -153,7 +153,7 @@ h3 span:last-child{
     99%{visibility: visible;}
     100%{visibility: hidden;}
 }
-@media (max-width:767px){
+@media (min-width:481px) and (max-width:767px){
     #big>span{
         font-size:60px;
     }
@@ -162,5 +162,20 @@ h3 span:last-child{
     }
     #button{
         scale:1.0;
+    }
+}
+@media (max-width:480px){
+    body{
+        margin:0px;
+        padding:0px;
+    }
+    #big>span{
+        font-size:40px;
+    }
+    #smol{
+        font-size:24px;
+    }
+    #button{
+        scale:0.8;
     }
 }

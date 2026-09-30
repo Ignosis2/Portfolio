@@ -78,7 +78,7 @@ body{
     from{opacity:0%;}
     to{opacity:100%;}
 }
-@media (max-width:767px){
+@media (min-width:481px) and (max-width:767px){
     .popndis>span{
         font-size:250%;
     }
@@ -87,5 +87,20 @@ body{
     }
     .navbar>a:hover{
         transform:scale(1.2);   
+    }
+}
+@media (max-width:480px){
+    .navbar>a{
+        width:95px;
+    }
+    .navbar>a:hover{
+        transform:scale(1.1);   
+    }
+    .popndis>span{
+        font-size:170%;
+    }
+    #meme{
+        width:300px;
+        height:300px;
     }
 }
