@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: calc(100vh - 100px);
+    height: 600px;
     width:100%;
     animation:popup 1s ease-out;
 }
@@ -12,6 +12,7 @@
     width:100vw;
     display:flex;
     position:sticky;
+    top:0;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
@@ -28,6 +29,7 @@
     transition: transform 0.3s ease;
     border-radius: 8px;
     align-items:center;
+    text-decoration: none;
 }
 .navbar>a:hover{
     color: #D4A72C;
@@ -67,4 +69,16 @@ html{
 @keyframes popuptext{
     from{transform: translateY(0);opacity: 0;}
     to{transform: translateY(75px);opacity: 1;}
+}
+@media (max-width:767px){
+    .box>a>img{
+        height: 90px;
+        width:90px;
+    }
+    .navbar>a{
+        width:120px;
+    }
+    .navbar>a:hover{
+        transform:scale(1.2);   
+    }
 }

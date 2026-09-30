@@ -21,7 +21,7 @@
     animation:swap 2s 1 6s ease-out both;
 }
 .popndis span:nth-child(5){
-    animation:swap 2s 1 8s ease-out both;
+    animation:swap 3s 1 8s ease-out both;
 }
 html{
     background-color:black;
@@ -35,6 +35,7 @@ body{
     height:50px;
     width:100vw;
     display:flex;
+    top:0;
     position:sticky;
     flex-direction:row;
     justify-content:space-around;
@@ -52,6 +53,7 @@ body{
     transition: transform 0.2s ease;
     border-radius: 8px;
     align-items:center;
+    text-decoration: none;
 }
 .navbar>a:hover{
     color: #D4A72C;
@@ -75,4 +77,15 @@ body{
 @keyframes pop{
     from{opacity:0%;}
     to{opacity:100%;}
+}
+@media (max-width:767px){
+    .popndis>span{
+        font-size:250%;
+    }
+    .navbar>a{
+        width:120px;
+    }
+    .navbar>a:hover{
+        transform:scale(1.2);   
+    }
 }

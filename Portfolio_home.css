@@ -10,6 +10,7 @@ body{
     width:100vw;
     display:flex;
     position:sticky;
+    top:0;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
@@ -26,6 +27,7 @@ body{
     transition: transform 0.3s ease;
     border-radius: 8px;
     align-items:center;
+    text-decoration: none;
 }
 .navbar>a:hover{
     color: #D4A72C;
@@ -203,3 +205,20 @@ body{
     to{transform: translateY(0);opacity:100%;}
 }
 /* use 1s timing with ease out for popup animation should you choose to use it */
+@media (max-width:767px){
+    html{
+        overflow-y:scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+    .navbar>a{
+        width:120px;
+    }
+    .navbar>a:hover{
+        transform:scale(1.2);   
+    }
+    .isp{
+        flex-direction: column;
+    }
+}
