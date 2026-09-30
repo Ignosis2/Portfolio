@@ -62,10 +62,12 @@ body>h1{
 .text>h1{
     align-self: center;
     text-align: center;
+    padding:5px;
 }
 .text>h2{
     align-self:center;
     text-align: center;
+    padding:5px;
 }
 .project>#nexus{
     width:calc(100% - 15px);
